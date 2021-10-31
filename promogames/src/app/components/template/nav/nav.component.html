@@ -1,0 +1,37 @@
+<mat-sidenav-container class="menu-container">
+    <mat-sidenav mode="side" opened>
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    home
+                </i>
+                Início
+            </a>
+            <a mat-list-item routerLink="/games">
+                <i class="material-icons">
+                    games
+                </i>
+                Games
+            </a>
+
+            <a mat-list-item routerLink="/lojas">
+                <i class="material-icons">
+                    store
+                </i>
+                Lojas
+            </a>
+
+            <a mat-list-item routerLink="/categorias">
+                <i class="material-icons">
+                    category
+                </i>
+                Categorias
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
